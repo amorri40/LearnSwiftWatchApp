@@ -11,11 +11,23 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    @IBOutlet weak var table: WKInterfaceTable!
+    
+    let HelpRequests = ["Lucy","Peter","Paul"]
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+//        // Configure interface objects here.
+//        table?.setNumberOfRows(HelpRequests.count, withRowType:"")
+//        
+//        for (index,personName) in HelpRequests.enumerated()  {
+//            if let row = table.rowController(at: index) as? HelpRequestRowController {
+//                row.nameLabel.setText(personName)
+//            }
+//        }
+        
     }
     
     override func willActivate() {

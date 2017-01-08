@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tyF-9s-946">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,42 +8,62 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
+        <!--HelpTableType-->
+        <scene sceneID="3Q1-pc-Ds2">
+            <objects>
+                <controller identifier="HelpTableType" id="tyF-9s-946" customClass="HelpTableInterfaceController" customModule="LearnSwift_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="1xu-Dr-VQl">
+                            <items>
+                                <tableRow identifier="HelpRowType" id="hxu-Pq-mAl" customClass="HelpRequestRowController" customModule="LearnSwift_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="a6t-pp-dbt" userLabel="table">
+                                        <items>
+                                            <separator alignment="left" id="gU8-KB-FKc"/>
+                                            <group width="1" alignment="left" verticalAlignment="bottom" contentMode="bottom" layout="vertical" id="r0A-Np-0KN">
+                                                <items>
+                                                    <group width="1" height="33" alignment="left" contentMode="top" id="pot-YC-KCz">
+                                                        <items>
+                                                            <imageView alignment="left" image="Bob" contentMode="scaleAspectFit" id="DZd-PN-NpZ"/>
+                                                            <label width="76" height="39" alignment="right" text="Name" textAlignment="right" id="2re-iS-R1m"/>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                    <group width="1" alignment="left" id="isz-fZ-kbc">
+                                                        <items>
+                                                            <dateLabel width="53" height="38" alignment="left" format="hh:mm" id="YE9-jX-gr2">
+                                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </dateLabel>
+                                                            <label width="67" height="34" alignment="right" verticalAlignment="bottom" text="Skill" textAlignment="right" id="qpW-1d-NiF">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="2re-iS-R1m" id="RHa-t3-x6q"/>
+                                        <outlet property="skillLabel" destination="qpW-1d-NiF" id="8jG-cO-0fA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="1xu-Dr-VQl" id="wnR-Br-Lym"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="22" y="273"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="LearnSwift_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" id="SAn-Cp-eOs">
-                            <items>
-                                <tableRow identifier="Lucy" id="jZ1-3p-o9g">
-                                    <group key="rootItem" width="1" alignment="left" id="QlM-uf-Sx2">
-                                        <items>
-                                            <group width="79" alignment="left" id="wRA-zs-wtX">
-                                                <items>
-                                                    <label alignment="left" text="Lucy" id="HKw-nH-zTJ"/>
-                                                </items>
-                                            </group>
-                                            <label alignment="left" text="NEW" id="dqZ-b6-WWp"/>
-                                        </items>
-                                    </group>
-                                </tableRow>
-                                <tableRow id="0oI-2h-Oxq">
-                                    <group key="rootItem" width="1" alignment="left" id="cTB-rP-av1"/>
-                                </tableRow>
-                                <tableRow id="Tpb-I9-6Ub">
-                                    <group key="rootItem" width="1" alignment="left" id="Ghb-aV-wiT"/>
-                                </tableRow>
-                                <tableRow id="1oU-fY-JoJ">
-                                    <group key="rootItem" width="1" alignment="left" id="ZhJ-7d-dUc"/>
-                                </tableRow>
-                                <tableRow id="OhG-dl-l7J">
-                                    <group key="rootItem" width="1" alignment="left" id="Htd-U1-ji0"/>
-                                </tableRow>
-                                <tableRow id="hno-gK-wCH">
-                                    <group key="rootItem" width="1" alignment="left" id="LW4-wi-ED4"/>
-                                </tableRow>
-                            </items>
-                        </table>
+                        <table alignment="left" id="SAn-Cp-eOs"/>
+                        <label alignment="left" text="Hello World" id="6dw-fu-vej"/>
                     </items>
                 </controller>
             </objects>

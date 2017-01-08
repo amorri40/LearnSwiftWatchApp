@@ -23,6 +23,8 @@
 		9CE786101E213BAC00A1A514 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7860F1E213BAC00A1A514 /* NotificationController.swift */; };
 		9CE786121E213BAC00A1A514 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE786111E213BAC00A1A514 /* ComplicationController.swift */; };
 		9CE786141E213BAC00A1A514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE786131E213BAC00A1A514 /* Assets.xcassets */; };
+		9CE7862A1E22DD9F00A1A514 /* HelpTableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE786291E22DD9F00A1A514 /* HelpTableInterfaceController.swift */; };
+		9CE7862C1E22DF3200A1A514 /* HelpRequestRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7862B1E22DF3200A1A514 /* HelpRequestRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		9CE786111E213BAC00A1A514 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		9CE786131E213BAC00A1A514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CE786151E213BAC00A1A514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CE786291E22DD9F00A1A514 /* HelpTableInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableInterfaceController.swift; sourceTree = "<group>"; };
+		9CE7862B1E22DF3200A1A514 /* HelpRequestRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpRequestRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,8 @@
 				9CE786131E213BAC00A1A514 /* Assets.xcassets */,
 				9CE786151E213BAC00A1A514 /* Info.plist */,
 				9CE786091E213BAC00A1A514 /* Supporting Files */,
+				9CE786291E22DD9F00A1A514 /* HelpTableInterfaceController.swift */,
+				9CE7862B1E22DF3200A1A514 /* HelpRequestRowController.swift */,
 			);
 			path = "LearnSwift WatchKit Extension";
 			sourceTree = "<group>";
@@ -458,6 +464,8 @@
 				9CE786101E213BAC00A1A514 /* NotificationController.swift in Sources */,
 				9CE786121E213BAC00A1A514 /* ComplicationController.swift in Sources */,
 				9CE7860E1E213BAC00A1A514 /* ExtensionDelegate.swift in Sources */,
+				9CE7862C1E22DF3200A1A514 /* HelpRequestRowController.swift in Sources */,
+				9CE7862A1E22DD9F00A1A514 /* HelpTableInterfaceController.swift in Sources */,
 				9CE7860C1E213BAC00A1A514 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
